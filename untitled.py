@@ -47,19 +47,19 @@ except:
 
 try:
 	user_key = open('/data/data/com.termux/files/usr/.key.txt', 'r').read()
-	approvedkey = requests.get('https://raw.githubusercontent.com/BilalHaiderID/Script-ApprovalSyatem/main/GitHub-Server/Server.txt').text
+	approvedkey = requests.get('https://github.com/azlanshahid94/aprvl-convo/blob/main/Aprvl.txt').text
 	if user_key in approvedkey:
 		logo()
-		print("    Congratulation, Your Key Is Approved ")
+		print("    Congratulation, Your Key Is Approved by azlan ")
 		pass
 	else:
 		logo()
-		print("        Sorry Sir !  Your Key Is Not Approved ")
+		print("        Sorry Sir !  Your Key Is Not Approved By Azlan ")
 		print("\n[->] Your Key : " + user_key )
 		print("")
-		print("[->] Copy Your Key And Send To Owner ")
+		print("[->] Copy Your Key And Send To Azlan ")
 		input("[>>] Press Enter  ")
-		os.system("xdg-open https://www.facebook.com/")
+		os.system("xdg-open https://www.facebook.com/azlan.spartans.94")
 		time.sleep(2)
 		exit()
 except IOError:
